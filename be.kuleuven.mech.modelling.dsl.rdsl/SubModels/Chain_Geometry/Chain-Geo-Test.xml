@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X-RDSL-KC_Chain_Geo 	xmlns="http://www.example.org/X-RDSL-KC_Chain_Geo"
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH"
+			xmlns:frm="http://www.example.org/X-RDSL-KC_Frame"
+			xmlns:top="http://www.example.org/X-RDSL_KC_Chain_Top"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.example.org/X-RDSL-KC_Chain_Geo X-RDSL-KC_Chain_Geo.xsd "
+			version="1.0">
+
+	<chain name="chain1" id="c1"/>
+
+	<link name="link1" id="l1"/>
+	<link name="link2" id="l2"/>
+	<link name="link3" id="l3"/>
+	<link name="link4" id="l4"/>
+	
+	<frame name="frame1" id="f1">
+		<frm:point 	name="pointFrame1" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p1">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame1" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o1">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame2" id="f2">
+		<frm:point 	name="pointFrame2" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p2">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame2" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o2">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame3" id="f3">
+		<frm:point 	name="pointFrame3" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p3">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame3" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o3">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame4" id="f4">
+		<frm:point 	name="pointFrame4" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p4">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame4" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o4">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame5" id="f5">
+		<frm:point 	name="pointFrame5" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p5">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame5" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o5">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame6" id="f6">
+		<frm:point 	name="pointFrame6" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p6">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame6" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o6">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame7" id="f7">
+		<frm:point 	name="pointFrame7" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p7">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame7" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o7">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<frame name="frame8" id="f8">
+		<frm:point 	name="pointFrame8" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p8">
+			ThisIsAUriToPointData
+		</frm:point>
+		<frm:orientation 	name="orientationFrame8" 
+					dataModel="URI" 
+					dataMetaModel="URI" 
+					unitsModel="URI" 
+					unitsMetaModel="URI" 
+					id="o8">
+			ThisIsAUriToOrientationData			
+		</frm:orientation>
+		<frm:referenceFrame>
+			ThisIsAUriToRefFrame
+		</frm:referenceFrame>
+	</frame>
+	
+	<joint name="joint1" id="j1">
+		<jointValue>
+			ThisIsAUriToJointValue
+		</jointValue>
+	</joint>
+	<joint name="joint2" id="j2">
+		<jointValue>
+			ThisIsAUriToJointValue
+		</jointValue>
+	</joint>
+	<joint name="joint3" id="j3">
+		<jointValue>
+			ThisIsAUriToJointValue
+		</jointValue>
+	</joint>
+	<joint name="joint4" id="j4">
+		<jointValue>
+			ThisIsAUriToJointValue
+		</jointValue>
+	</joint>
+	
+	<contains name="containment1" id="cnt1" containerNodeId="c1" nodeId="l1"/>
+	<contains name="containment1" id="cnt2" containerNodeId="c1" nodeId="l2"/>
+	<contains name="containment1" id="cnt3" containerNodeId="c1" nodeId="l3"/>
+	<contains name="containment1" id="cnt4" containerNodeId="c1" nodeId="l4"/>
+	
+	<connects name="connect1" id="cnct1" xsi:type="hh:connector" connectorId="j1" portId="f1"/>
+	<connects name="connect2" id="cnct2" xsi:type="hh:connector" connectorId="j1" portId="f2"/>
+	<connects name="connect3" id="cnct3" xsi:type="hh:connector" connectorId="j2" portId="f3"/>
+	<connects name="connect4" id="cnct4" xsi:type="hh:connector" connectorId="j2" portId="f4"/>
+	<connects name="connect5" id="cnct5" xsi:type="hh:connector" connectorId="j3" portId="f5"/>
+	<connects name="connect6" id="cnct6" xsi:type="hh:connector" connectorId="j3" portId="f6"/>
+	<connects name="connect7" id="cnct7" xsi:type="hh:connector" connectorId="j4" portId="f7"/>
+	<connects name="connect8" id="cnct8" xsi:type="hh:connector" connectorId="j4" portId="f8"/>
+	
+	<connects name="connect9" id="cnct9" xsi:type="hh:node" portId="f1" nodeId="l1"/>
+	<connects name="connect10" id="cnct10" xsi:type="hh:node" portId="f5" nodeId="l1"/>
+	<connects name="connect11" id="cnct11" xsi:type="hh:node" portId="f2" nodeId="l2"/>
+	<connects name="connect11" id="cnct12" xsi:type="hh:node" portId="f3" nodeId="l2"/>
+	<connects name="connect12" id="cnct13" xsi:type="hh:node" portId="f8" nodeId="l2"/>
+	<connects name="connect13" id="cnct14" xsi:type="hh:node" portId="f4" nodeId="l3"/>
+	<connects name="connect14" id="cnct15" xsi:type="hh:node" portId="f6" nodeId="l4"/>
+	<connects name="connect15" id="cnct16" xsi:type="hh:node" portId="f7" nodeId="l4"/>
+	
+</X-RDSL-KC_Chain_Geo>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X-RDSL-KC_Chain_Top 	xmlns="http://www.example.org/X-RDSL-KC_Chain_Top"
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.example.org/X-RDSL-KC_Chain_Top X-RDSL-KC_Chain_Top.xsd "
+			version="1.0">
+
+	<chain name="chain1" id="c1"/>
+
+	<link name="link1" id="l1"/>
+	<link name="link2" id="l2"/>
+	<link name="link3" id="l3"/>
+	<link name="link4" id="l4"/>
+	
+	<port name="port1" id="p1"/>		
+	<port name="port2" id="p2"/>
+	<port name="port3" id="p3"/>
+	<port name="port4" id="p4"/>
+	<port name="port1" id="p5"/>
+	<port name="port1" id="p6"/>
+	<port name="port1" id="p7"/>
+	<port name="port1" id="p8"/>
+	
+	<joint name="joint1" id="j1"/>
+	<joint name="joint2" id="j2"/>
+	<joint name="joint3" id="j3"/>
+	<joint name="joint4" id="j4"/>
+	
+	<contains name="containment1" id="cnt1" containerNodeId="c1" nodeId="l1"/>
+	<contains name="containment1" id="cnt2" containerNodeId="c1" nodeId="l2"/>
+	<contains name="containment1" id="cnt3" containerNodeId="c1" nodeId="l3"/>
+	<contains name="containment1" id="cnt4" containerNodeId="c1" nodeId="l4"/>
+	
+	<connects name="connect1" id="cnct1" xsi:type="hh:connector" connectorId="j1" portId="p1"/>
+	<connects name="connect2" id="cnct2" xsi:type="hh:connector" connectorId="j1" portId="p2"/>
+	<connects name="connect3" id="cnct3" xsi:type="hh:connector" connectorId="j2" portId="p3"/>
+	<connects name="connect4" id="cnct4" xsi:type="hh:connector" connectorId="j2" portId="p4"/>
+	<connects name="connect5" id="cnct5" xsi:type="hh:connector" connectorId="j3" portId="p5"/>
+	<connects name="connect6" id="cnct6" xsi:type="hh:connector" connectorId="j3" portId="p6"/>
+	<connects name="connect7" id="cnct7" xsi:type="hh:connector" connectorId="j4" portId="p7"/>
+	<connects name="connect8" id="cnct8" xsi:type="hh:connector" connectorId="j4" portId="p8"/>
+	
+	<connects name="connect9" id="cnct9" xsi:type="hh:node" portId="p1" nodeId="l1"/>
+	<connects name="connect10" id="cnct10" xsi:type="hh:node" portId="p5" nodeId="l1"/>
+	<connects name="connect11" id="cnct11" xsi:type="hh:node" portId="p2" nodeId="l2"/>
+	<connects name="connect11" id="cnct12" xsi:type="hh:node" portId="p3" nodeId="l2"/>
+	<connects name="connect12" id="cnct13" xsi:type="hh:node" portId="p8" nodeId="l2"/>
+	<connects name="connect13" id="cnct14" xsi:type="hh:node" portId="p4" nodeId="l3"/>
+	<connects name="connect14" id="cnct15" xsi:type="hh:node" portId="p6" nodeId="l4"/>
+	<connects name="connect15" id="cnct16" xsi:type="hh:node" portId="p7" nodeId="l4"/>
+
+</X-RDSL-KC_Chain_Top>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X-RDSL-KC_Frame 	xmlns="http://www.example.org/X-RDSL-KC_Frame" 
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.example.org/X-RDSL-KC_Frame X-RDSL-KC_Frame.xsd "
+			version="1.0">
+
+	<frame name="frame1" id="f1">
+		<point 	name="pointFrame1" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="p1">
+			ThisIsAUriToPointData
+		</point>
+		<orientation 	name="orientationFrame1" 
+				dataModel="URI" 
+				dataMetaModel="URI" 
+				unitsModel="URI" 
+				unitsMetaModel="URI" 
+				id="o1">
+			ThisIsAUriToOrientationData			
+		</orientation>
+		<referenceFrame>
+			ThisIsAUriToRefFrame
+		</referenceFrame>
+	</frame>
+
+</X-RDSL-KC_Frame>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X-RDSL-KC 	xmlns="http://www.example.org/X-RDSL-KC" 
+			xmlns:frm="http://www.example.org/X-RDSL-KC_Frame" 
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH"
+			xmlns:geo="http://www.example.org/X-RDSL-KC_Chain_Geo"
+			xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.example.org/X-RDSL-KC X-RDSL-KC.xsd"
+			version="1.0">
+
+  <chain name="chain1" id="c1"/>
+  
+  <link name="link1" id="l1"/>
+
+  <frame name="frame1" id="f1">
+  	<frm:point name="point1" dataModel="URI" dataMetaModel="URI_HDF5" unitsModel="URI" unitsMetaModel="URI" id="fp1">
+  		UriToPoint (Concrete coordinates or uri to hdf5 file)
+  	</frm:point>
+  	<frm:orientation name="orientation1" dataModel="URI" dataMetaModel="URI" unitsModel="URI" unitsMetaModel="URI" id="fo1">
+  		UriToOrientation
+  	</frm:orientation>
+  	<frm:referenceFrame>
+  		UriToReferenceFrame
+  	</frm:referenceFrame>
+  </frame>
+  
+  <joint name="joint1" id="j1" type="revolute">
+	 <geo:jointValue>
+		UriToJointValue
+	 </geo:jointValue>
+  </joint>
+  	
+  <contains name="containment1" id="cnt1" containerNodeId="c1" nodeId="l1"/>
+  
+  <connects name="connector1" id="cnct1" xsi:type="hh:connector" connectorId="j1" 
+  			portId="f1"/>
+  <connects name="connector2" id="cnct2" xsi:type="hh:node" portId="f1" 
+  			nodeId="l1"/>
+
+</X-RDSL-KC>

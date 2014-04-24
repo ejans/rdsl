@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.example.org/X-RDSL-KC" 
+			xmlns:kc="http://www.example.org/X-RDSL-KC" 
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH"
+			xmlns:frm="http://www.example.org/X-RDSL-KC_Frame"
+			xmlns:geo="http://www.example.org/X-RDSL-KC_Chain_Geo"
+			elementFormDefault="qualified"
+			attributeFormDefault="unqualified">
+	
+	<xsd:import schemaLocation="SubModels/HierarchicalHypergraphs/X-RDSL-KC_HH.xsd" 
+				namespace="http://www.example.org/X-RDSL-KC_HH"/>
+	<xsd:import schemaLocation="SubModels/GeometricSemantics/X-RDSL-KC_Frame.xsd"
+				namespace="http://www.example.org/X-RDSL-KC_Frame"/>
+	<xsd:import schemaLocation="SubModels/Chain_Geometry/X-RDSL-KC_Chain_Geo.xsd"
+				namespace="http://www.example.org/X-RDSL-KC_Chain_Geo"/>
+				
+	<xsd:element name="X-RDSL-KC">
+		<xsd:complexType>
+			<xsd:choice minOccurs="1" maxOccurs="unbounded">
+				<xsd:element name="chain" type="hh:NodeType"/>
+				<xsd:element name="link" type="hh:NodeType"/>
+				<xsd:element name="frame" type="frm:FrameType"/>
+				<xsd:element name="joint" type="geo:JointType"/>
+				<xsd:element name="connects" type="hh:ConnectsType"/>
+				<xsd:element name="contains" type="hh:ContainsType"/>
+			</xsd:choice>
+			<xsd:attribute name="version" type="xsd:decimal" use="required"/>
+		</xsd:complexType>
+    </xsd:element>
+</xsd:schema>

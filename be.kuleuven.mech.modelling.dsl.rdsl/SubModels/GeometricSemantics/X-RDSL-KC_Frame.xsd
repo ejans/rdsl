@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			targetNamespace="http://www.example.org/X-RDSL-KC_Frame"
+			xmlns:frm="http://www.example.org/X-RDSL-KC_Frame" 
+			xmlns:hh="http://www.example.org/X-RDSL-KC_HH"
+			elementFormDefault="qualified"
+			attributeFormDefault="unqualified">
+
+	<xsd:import schemaLocation="../HierarchicalHypergraphs/X-RDSL-KC_HH.xsd" 
+				namespace="http://www.example.org/X-RDSL-KC_HH" />
+
+	<xsd:element name="X-RDSL-KC_Frame">
+		<xsd:complexType>
+			<xsd:choice minOccurs="1" maxOccurs="unbounded">
+				<xsd:element name="frame" type="frm:FrameType"/>
+			</xsd:choice>
+			<xsd:attribute name="version" type="xsd:decimal" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Complex types -->
+	<xsd:complexType name="FrameType">
+		<xsd:complexContent>
+			<xsd:extension base="hh:PortType">
+				<xsd:sequence>
+					<xsd:element name="point" type="frm:PointType"/>
+					<xsd:element name="orientation" type="frm:OrientationFrameType"/>
+					<xsd:element name="referenceFrame" type="xsd:anyURI"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="PointType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:anyURI">
+				<xsd:attribute name="name" type="xsd:string" use="required"/>	
+				<xsd:attribute name="id" type="xsd:ID" use="required"/>
+				<xsd:attribute name="dataMetaModel" type="frm:DataMetaModelType" use="required"/>				
+				<xsd:attribute name="dataModel" type="frm:DataModelType" use="required"/>
+				<xsd:attribute name="unitsMetaModel" type="frm:UnitsMetaModelType" use="required"/>
+				<xsd:attribute name="unitsModel" type="frm:UnitsModelType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="OrientationFrameType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:anyURI">
+				<xsd:attribute name="name" type="xsd:string" use="required"/>	
+				<xsd:attribute name="id" type="xsd:ID" use="required"/>
+				<xsd:attribute name="dataMetaModel" type="frm:DataMetaModelType" use="required"/>				
+				<xsd:attribute name="dataModel" type="frm:DataModelType" use="required"/>
+				<xsd:attribute name="unitsMetaModel" type="frm:UnitsMetaModelType" use="required"/>
+				<xsd:attribute name="unitsModel" type="frm:UnitsModelType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="DataMetaModelType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				DataMetaModel:
+				Different types of "data file formats" to refer to.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:anyURI"/>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="DataModelType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				Something (e.g. orientation) can be described in different ways
+				this should link to a specific "orientation representation" of a
+				mathematical xml schema
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:anyURI"/>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="UnitsMetaModelType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				UnitsMetaModel:
+				Different types of Units metamodels to refer to.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:anyURI"/>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="UnitsModelType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				Find xml schema with all available units
+				and use here.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:anyURI"/>
+	</xsd:simpleType>
+</xsd:schema>
